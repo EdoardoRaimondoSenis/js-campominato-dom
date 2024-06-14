@@ -14,18 +14,6 @@ function numerobombe(numeri) {
 }
 
 let bombe = numerobombe(9);
-console.log(bombe);
-
-function letturabombe(lettura) {
-    let outputletto;
-    for (let i = 0; i < lettura.length; i++) {
-        outputletto = lettura[i];
-    }
-    return outputletto;
-}
-
-let lettura = letturabombe(bombe);
-console.log(lettura);
 
 
 button.addEventListener("click",
@@ -42,14 +30,15 @@ button.addEventListener("click",
                 let quadro = document.createElement("div");
                 quadro.classList.add("risultatodieci");
 
-
+                
                 quadro.addEventListener("click",
                     function () {
                         this.classList.toggle("sfondoclick");
-                        if (lettura != numericaselle) {
+                        if (numericaselle !== bombe.includes("")) {
+                            console.log(bombe);
                             punteggio = punteggio + 1;
                             console.log(punteggio);
-                        } else if (lettura == numericaselle) {
+                        } else if (numericaselle == bombe.includes("")) {
                             document.querySelector(".fine").innerHTML = "Hai perso, il tuo punteggio totale è " + punteggio;
                             quadro.classList.toggle("sfondobombe");
                             console.log(numericaselle);
