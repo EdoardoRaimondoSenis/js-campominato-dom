@@ -1,0 +1,124 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: lemonchiffon;
+}
+
+#titolo {
+    color: gray;
+    text-shadow: 4px 4px gainsboro;
+}
+
+.fine {
+    text-shadow: 4px 4px gainsboro;
+    margin: 10px 0;
+    font-size: 20px;
+    color: gray;
+}
+
+#backrisultato {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 15px;
+}
+
+.contentgen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.difficolta {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.difficolta:hover {
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+#prisultato {
+    width: 70rem;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.risultatodieci {
+    width: calc(100% / 10 - 4px);
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.risultatonove {
+    width: calc(100% / 9 - 4px);
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.risultatotto {
+    width: calc(100% / 8 - 4px);
+    height: calc(100% / 8);
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.sfondoclick {
+    background-color: greenyellow;
+}
+
+.sfondobomba {
+    background-color: red;
+}
+
+#button {
+    width: 300px;
+    height: 70px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+#button:hover {
+    transform: scale(1.1);
+    transition: 250ms;
+}
